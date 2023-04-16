@@ -46,7 +46,6 @@ export default function PokemonDetails() {
     return `${feet}'${inches}"`;
   };
   function covertKgToLbs(num) {
-    console.log(num, "is");
     const kg = parseFloat(num);
     const lbs = kg * 2.20462;
     return `${lbs.toFixed(2)}`;
@@ -80,7 +79,7 @@ export default function PokemonDetails() {
   };
 
   return (
-    <div className=" container mx-auto ">
+    <div className=" container mx-auto h-full">
       <div className="flex justify-center gap-4 items-center my-16">
         <div className="text-black  font-bold text-4xl">
           {data?.pokemon?.name}
@@ -90,7 +89,7 @@ export default function PokemonDetails() {
         </div>
       </div>
       <div className="p-2 flex flex-col  gap-24 md:flex-row">
-        <div className="h-[600px] w-[500px]  bg-[#F2F2F2] rounded-lg flex justify-center items-center">
+        <div className="h-[600px] lg:w-[500px] max-w-[500px]  bg-[#F2F2F2] rounded-lg flex justify-center items-center">
           <Image
             src={data?.pokemon?.image}
             alt="image"
@@ -99,7 +98,7 @@ export default function PokemonDetails() {
             width={400}
           />
         </div>
-        <div className="h-[600px] w-[500px] bg-[#30A7D7] p-12  rounded-lg">
+        <div className="min-h-[400px] max-w-[500px] bg-[#30A7D7] p-12  rounded-lg">
           <div>
             <h1 className="text-white text-3xl">Category</h1>
             <h1 className="text-2xl mt-4">{data?.pokemon?.classification}</h1>
@@ -129,7 +128,7 @@ export default function PokemonDetails() {
       <div className="flex justify-center">
         <button
           onClick={() => setOpen(true)}
-          className="bg-green-400 h-12 w-36 mt-4 rounded-lg"
+          className="bg-green-400 h-12 w-[200px] mt-4 rounded-lg"
         >
           Open Evolution
         </button>

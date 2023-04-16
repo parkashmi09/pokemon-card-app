@@ -61,8 +61,6 @@ export default function EvolutionCardModal({
       transform: "translate(-50%, -50%)",
     },
   };
-
-  console.log("data comes in query evolution", data);
   return (
     <div className="">
       <Modal
@@ -84,13 +82,13 @@ export default function EvolutionCardModal({
                 <AiOutlineWarning size={60} />
               </div>
             ) : (
-              <div className="flex gap-8 w-[600px] h-[600px] justify-center items-center">
+              <div className="flex flex-col lg:flex-row gap-8 w-[250px] max-w-[600px] h-[600px] justify-center items-center">
                 <div className="">
                   <Image
                     src={image}
                     width={200}
                     height={200}
-                    className="h-[100px] w-[100px] rounded-full border border-slate-400 object-fit overflow-hidden"
+                    className="min-h-[100px] max-w-[100px] rounded-full border border-slate-400 object-fit overflow-hidden"
                     alt=""
                   />
                   <div className="p-2 my-4 flex gap-2">

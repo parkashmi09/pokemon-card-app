@@ -1,10 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function PokemonCard({ data }) {
-  const router = useRouter();
   const renderTypes = (value) => {
     return (
       <div className="flex flex-col md:flex-row gap-1 ">
