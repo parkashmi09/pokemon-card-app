@@ -75,14 +75,14 @@ export default function EvolutionCardModal({
         <div className="w-full">
           <div className="container mx-auto p-6">
             {!data?.pokemon?.evolutions ? (
-              <div className="w-[600px] h-[600px] flex flex-col justify-center items-center">
-                <h1 className="text-2xl font-bold mb-2">
+              <div className="w-[300px] md:w-[400px]  lg:w-[800px] flex flex-col justify-center items-center">
+                <h1 className="text-2xl text-center font-bold mb-2">
                   No Evolutions Data Available
                 </h1>
                 <AiOutlineWarning size={60} />
               </div>
             ) : (
-              <div className="px-2 xl:px-0 flex flex-col lg:flex-row gap-8 w-[300px] max-w-[800px] justify-center items-center">
+              <div className="px-2 xl:px-0 flex flex-col lg:flex-row gap-8 w-[300px] md:w-[400px]  lg:w-[800px] justify-center items-center">
                 <div className="">
                   <Image
                     src={image}
