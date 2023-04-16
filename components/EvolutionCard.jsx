@@ -82,7 +82,7 @@ export default function EvolutionCardModal({
                 <AiOutlineWarning size={60} />
               </div>
             ) : (
-              <div className="flex flex-col lg:flex-row gap-8 w-[250px] max-w-[600px] h-[600px] justify-center items-center">
+              <div className="px-2 xl:px-0 flex flex-col lg:flex-row gap-8 w-[300px] max-w-[800px] justify-center items-center">
                 <div className="">
                   <Image
                     src={image}

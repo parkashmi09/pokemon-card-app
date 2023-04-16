@@ -88,17 +88,17 @@ export default function PokemonDetails() {
           #{data?.pokemon?.number}
         </div>
       </div>
-      <div className="p-2 flex flex-col  gap-24 md:flex-row">
-        <div className="h-[600px] lg:w-[500px] max-w-[500px]  bg-[#F2F2F2] rounded-lg flex justify-center items-center">
+      <div className="p-2 flex flex-col items-center gap-24 md:flex-row">
+        <div className="min-h-[600px] w-[400px] xl:w-[500px]  bg-[#F2F2F2] rounded-lg flex justify-center items-center">
           <Image
             src={data?.pokemon?.image}
             alt="image"
             className="object-cover"
-            height={400}
-            width={400}
+            height={300}
+            width={300}
           />
         </div>
-        <div className="min-h-[400px] max-w-[500px] bg-[#30A7D7] p-12  rounded-lg">
+        <div className="min-h-[600px] w-[400px] xl:w-[500px] bg-[#30A7D7] p-12  rounded-lg">
           <div>
             <h1 className="text-white text-3xl">Category</h1>
             <h1 className="text-2xl mt-4">{data?.pokemon?.classification}</h1>
